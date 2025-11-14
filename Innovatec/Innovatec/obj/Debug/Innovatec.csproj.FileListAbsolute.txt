@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.Form1.resources
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.Properties.Resources.resources
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.Vista.Arbol.resources
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Innovatec\Innovatec\bin\Debug\Innovatec.exe.config
+C:\Users\Admin\source\repos\Innovatec\Innovatec\bin\Debug\Innovatec.exe
+C:\Users\Admin\source\repos\Innovatec\Innovatec\bin\Debug\Innovatec.pdb
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.exe
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.pdb
+C:\Users\Admin\source\repos\Innovatec\Innovatec\obj\Debug\Innovatec.exe.config

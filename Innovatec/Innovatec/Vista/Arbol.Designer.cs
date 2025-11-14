@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRecorrer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnConteo = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.tvArbol = new System.Windows.Forms.TreeView();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbRama = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.tbRama);
+            this.groupBox1.Controls.Add(this.btnRecorrer);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnConteo);
             this.groupBox1.Controls.Add(this.btnInsertar);
-            this.groupBox1.Controls.Add(this.treeView1);
+            this.groupBox1.Controls.Add(this.tvArbol);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(21, 26);
@@ -56,15 +56,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Arbol";
             // 
-            // button4
+            // btnRecorrer
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(443, 135);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 54);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRecorrer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecorrer.Location = new System.Drawing.Point(443, 135);
+            this.btnRecorrer.Name = "btnRecorrer";
+            this.btnRecorrer.Size = new System.Drawing.Size(128, 54);
+            this.btnRecorrer.TabIndex = 5;
+            this.btnRecorrer.Text = "Recorrer";
+            this.btnRecorrer.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -76,15 +76,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Agregar rama:";
             // 
-            // button3
+            // btnConteo
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(443, 195);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 54);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnConteo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConteo.Location = new System.Drawing.Point(443, 195);
+            this.btnConteo.Name = "btnConteo";
+            this.btnConteo.Size = new System.Drawing.Size(128, 54);
+            this.btnConteo.TabIndex = 4;
+            this.btnConteo.Text = "Conteo";
+            this.btnConteo.UseVisualStyleBackColor = true;
             // 
             // btnInsertar
             // 
@@ -95,14 +95,15 @@
             this.btnInsertar.TabIndex = 3;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
-            // treeView1
+            // tvArbol
             // 
-            this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeView1.Location = new System.Drawing.Point(23, 75);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(400, 373);
-            this.treeView1.TabIndex = 2;
+            this.tvArbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvArbol.Location = new System.Drawing.Point(23, 75);
+            this.tvArbol.Name = "tvArbol";
+            this.tvArbol.Size = new System.Drawing.Size(400, 373);
+            this.tvArbol.TabIndex = 2;
             // 
             // btnBuscar
             // 
@@ -113,13 +114,14 @@
             this.btnBuscar.TabIndex = 0;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // textBox1
+            // tbRama
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(275, 26);
-            this.textBox1.TabIndex = 6;
+            this.tbRama.Location = new System.Drawing.Point(148, 29);
+            this.tbRama.Name = "tbRama";
+            this.tbRama.Size = new System.Drawing.Size(275, 26);
+            this.tbRama.TabIndex = 6;
             // 
             // Arbol
             // 
@@ -138,12 +140,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRecorrer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnConteo;
         private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView tvArbol;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbRama;
     }
 }

@@ -85,6 +85,7 @@
             this.btnConteo.TabIndex = 4;
             this.btnConteo.Text = "Conteo";
             this.btnConteo.UseVisualStyleBackColor = true;
+            this.btnConteo.Click += new System.EventHandler(this.btnConteo_Click);
             // 
             // btnInsertar
             // 

@@ -60,5 +60,34 @@ namespace Innovatec.Vista
             }
             return null;
         }
+
+        private void btnConteo_Click(object sender, EventArgs e)
+        {
+            // contar los nodos que tiene cada rama
+
+            if (tvArbol.SelectedNode != null)
+            {
+                int conteo = 0;
+
+                ContarNodos(tvArbol.SelectedNode, ref conteo);
+
+                MessageBox.Show("La rama " + tvArbol.SelectedNode.Text + " tiene " + conteo + " nodos.");
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una rama para contar sus nodos.");
+            }
+        }
+
+        private void ContarNodos(TreeNode nodo, ref int contador)
+        {
+            contador++;
+            foreach (TreeNode hijo in nodo.Nodes)
+            {
+                ContarNodos(hijo, ref contador);
+                
+            }
+            contador = -1;
+        }
     }
 }
